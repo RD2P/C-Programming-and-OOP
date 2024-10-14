@@ -27,10 +27,27 @@ int main() {
   // notice we don't need & when scanning string 
   char name[100];
   printf("Enter your name: ");
-  scanf("%100s", name);
+  scanf("%100s", name); // limit: only read up to 100 characters
   printf("Hello %s", name);
   */
   
+  // scan a line
+  /*
+  char line[1000];
+  printf("Enter a line:\n");
+  scanf("%[^\n]1000s", line);
+  printf("%s",line);
+  */
+
+  // reading a file
+  /*
+  char line[1000];
+  FILE *hand; //pointer to the file object
+  hand = fopen("words.txt", "r");
+  while( fgets(line, 1000, hand) != NULL){
+    printf("%s", line);
+  }
+  */
 
 }
 
@@ -38,4 +55,5 @@ int main() {
 char surrounded by ''
 char array surrounded by ""
 NULL is number 0, cast to be pointer to nothing
+fgets is used to read string from input stream (file or stdin)
 */
