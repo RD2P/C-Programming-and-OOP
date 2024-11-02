@@ -6,8 +6,7 @@ int main(){
   printf("%s\n", &name);
 
   // print char as number to get ascii code
-  printf("%c %d", 'A', 'A');
-
+  printf("%c %d\n", 'A', 'A');
 
   return 0;
 }
