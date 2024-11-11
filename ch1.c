@@ -2,11 +2,11 @@
 
 int main() {
   
-  // printf("%d\n", 1 + 1);
-  // printf("x %.1f i %d\n", 3.5, 100);
+  printf("%d\n", 1 + 1);
+  printf("x %.1f i %d\n", 3.5, 100);
 
-  // char num = 5;
-  // printf("%05d hey", num);
+  char num = 5;
+  printf("%003d hey", num);
 
   // using wrong specifier, result in 0.0
   // printf("%.1f",8); 
